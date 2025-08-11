@@ -15,7 +15,7 @@ export const Calculator = () => {
             <form onSubmit={(e : React.FormEvent<HTMLFormElement>) => {e.preventDefault()}}>
                 <label htmlFor="price">Цена в юанях на маркетплейсе:</label>
                 <br />
-                <input type="number" id="initialPrice" name="initalPrice" required onChange={handleChange}/>
+                <input type="number" id="initialPrice" name="initalPrice" required onChange={handleChange} autoFocus/>
                 <span>¥</span>
                 <h2><strong>{price ?? 0}</strong> BYN</h2>   
             </form>
